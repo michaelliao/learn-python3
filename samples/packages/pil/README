@@ -1,0 +1,26 @@
+Install PIL
+===========
+
+### Windows
+
+Open web page: https://pypi.python.org/pypi/Pillow/2.8.1
+
+Find link of "Pillow-2.8.1.win-amd64-py3.4.exe" and download it:
+
+https://pypi.python.org/packages/3.4/P/Pillow/Pillow-2.8.1.win-amd64-py3.4.exe
+
+### Mac OS X
+
+Step 1: Install dependencies by brew:
+
+$ brew install libtiff libjpeg webp little-cms2
+
+Step 2: Install Pillow by pip:
+
+$ sudo pip3 install Pillow
+
+### Linux
+
+For Debian/Ubuntu:
+
+$ sudo apt-get install python3-pil
