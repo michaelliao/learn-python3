@@ -23,7 +23,7 @@ for x in f:
 g = fib(5)
 while 1:
     try:
-        x = g.send(None)
+        x = next(g)
         print('g:', x)
     except StopIteration as e:
         print('Generator return value:', e.value)
