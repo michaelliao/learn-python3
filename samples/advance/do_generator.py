@@ -29,12 +29,3 @@ while 1:
         print('Generator return value:', e.value)
         break
 
-# call generator using iter:
-i = iter(fib(5))
-while 1:
-    try:
-        r = next(i)
-        print('i:', r)
-    except StopIteration as e:
-        print('Generator return value:', e.value)
-        break
