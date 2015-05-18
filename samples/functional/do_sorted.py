@@ -8,16 +8,8 @@ L = ['bob', 'about', 'Zoo', 'Credit']
 print(sorted(L))
 print(sorted(L, key=str.lower))
 
-students = [
-    ('Adam', 90),
-    ('Tim', 60),
-    ('Lisa', 80),
-    ('Bart', 60)
-]
+students = [('Bob', 75), ('Adam', 92), ('Bart', 66), ('Lisa', 88)]
 
-print(sorted(students, key=itemgetter(1)))
-
-def student_to_key(t):
-    return '%+02d%s' % (100-t[1], t[0])
-
-print(sorted(students, key=student_to_key))
+print(sorted(students, key=itemgetter(0)))
+print(sorted(students, key=lambda t: t[1]))
+print(sorted(students, key=itemgetter(1), reverse=True))

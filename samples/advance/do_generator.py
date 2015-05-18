@@ -23,18 +23,9 @@ for x in f:
 g = fib(5)
 while 1:
     try:
-        x = g.send(None)
+        x = next(g)
         print('g:', x)
     except StopIteration as e:
         print('Generator return value:', e.value)
         break
 
-# call generator using iter:
-i = iter(fib(5))
-while 1:
-    try:
-        r = next(i)
-        print('i:', r)
-    except StopIteration as e:
-        print('Generator return value:', e.value)
-        break
