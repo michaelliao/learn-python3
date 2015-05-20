@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import time
-
 def consumer():
     r = ''
     while True:
@@ -10,7 +8,6 @@ def consumer():
         if not n:
             return
         print('[CONSUMER] Consuming %s...' % n)
-        time.sleep(1)
         r = '200 OK'
 
 def produce(c):
