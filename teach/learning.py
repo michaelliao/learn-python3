@@ -50,6 +50,12 @@ def write_py(name, code):
     print('Code wrote to: %s' % fpath)
     return fpath
 
+def decode(s):
+    try:
+        return s.decode('utf-8')
+    except UnicodeDecodeError:
+        return s.decode('gbk')
+
 def application(environ, start_response):
     host = environ.get('HTTP_HOST')
     method = environ.get('REQUEST_METHOD')
@@ -86,9 +92,9 @@ def application(environ, start_response):
     try:
         fpath = write_py(name, code)
         print('Execute: %s %s' % (EXEC, fpath))
-        r['output'] = subprocess.check_output([EXEC, fpath], stderr=subprocess.STDOUT, timeout=5).decode('utf-8')
+        r['output'] = decode(subprocess.check_output([EXEC, fpath], stderr=subprocess.STDOUT, timeout=5))
     except subprocess.CalledProcessError as e:
-        r = dict(error='Exception', output=e.output.decode('utf-8'))
+        r = dict(error='Exception', output=decode(e.output))
     except subprocess.TimeoutExpired as e:
         r = dict(error='Timeout', output='执行超时')
     except subprocess.CalledProcessError as e:
