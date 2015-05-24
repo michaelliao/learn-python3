@@ -77,8 +77,10 @@ def application(environ, start_response):
     code = qs['code'][0]
     headers = [('Content-Type', 'application/json')]
     origin = environ.get('HTTP_ORIGIN', '')
-    if origin:
-        headers.append(('Access-Control-Allow-Origin', origin))
+    if origin.find('www.liaoxuefeng.com') == -1:
+        start_response('400 Bad Request', [('Content-Type', 'application/json')])
+        return [b'{"error":"invalid_origin"}']
+    headers.append(('Access-Control-Allow-Origin', origin))
     start_response('200 OK', headers)
     r = dict()
     try:
