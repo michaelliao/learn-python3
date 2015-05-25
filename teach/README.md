@@ -4,7 +4,11 @@
 
 # 下载learning.py
 
-下载地址：[https://raw.githubusercontent.com/michaelliao/learn-python3/master/teach/learning.py](https://raw.githubusercontent.com/michaelliao/learn-python3/master/teach/learning.py)
+下载地址：
+
+[https://raw.githubusercontent.com/michaelliao/learn-python3/master/teach/learning.py](https://raw.githubusercontent.com/michaelliao/learn-python3/master/teach/learning.py)
+
+(右键 - 另存为)
 
 放到某个目录，例如`C:\Work`下。
 
