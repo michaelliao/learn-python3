@@ -40,17 +40,17 @@ CHAR_TO_FLOAT = {
 
 def str2float(s):
     nums = map(lambda ch: CHAR_TO_FLOAT[ch], s)
-    point = -1
+    point = 0
     def to_float(f, n):
         nonlocal point
         if n == -1:
-            point = 0
+            point = 1
             return f
-        if point == -1:
+        if point == 0:
             return f * 10 + n
         else:
-            point = point + 1
-            return f + n / pow(10, point)
+            point = point * 10
+            return f + n / point
     return reduce(to_float, nums, 0.0)
 
 print(str2float('0'))
