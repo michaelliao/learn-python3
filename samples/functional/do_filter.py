@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 def is_odd(n):
-    return n % 2 == 1
+    return n % 2 != 0//maybe this definition is more robust.
 
 L = range(100)
 
