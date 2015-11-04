@@ -11,7 +11,8 @@ import asyncio
 
 from aiohttp import web
 
-def index(request):
+async def index(request):
+    await asyncio.sleep(0.5)
     return web.Response(body=b'<h1>Index</h1>')
 
 async def hello(request):
