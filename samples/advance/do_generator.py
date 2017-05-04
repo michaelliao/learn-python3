@@ -28,4 +28,13 @@ while 1:
     except StopIteration as e:
         print('Generator return value:', e.value)
         break
-
+#杨辉三角
+a=[1]
+b=[1]
+c=[]
+while True:
+    yield b       
+    for i in range(len(b)-1):
+        c.append(b[i]+b[i+1])
+    b=a+c+a      
+    c=[]
