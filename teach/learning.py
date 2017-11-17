@@ -59,12 +59,14 @@ HTML_INDEX = r'''
 class LearningHTTPRequestHandler(BaseHTTPRequestHandler):
 
     def do_GET(self):
+        self.close_connection = True
         if self.path != '/':
             return self.send_error(404)
         self._sendHttpHeader('text/html')
         self._sendHttpBody(HTML_INDEX)
 
     def do_POST(self):
+        self.close_connection = True
         if self.path != '/run':
             return self.send_error(400)
         print('Prepare code...')
