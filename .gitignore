@@ -55,3 +55,6 @@ MANIFEST
 
 # Idea config
 .idea/
+
+# VS code config
+.vscode/
