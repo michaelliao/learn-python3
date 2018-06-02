@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import time, sys, queue
+import time, sys
 from multiprocessing.managers import BaseManager
 
 # 创建类似的QueueManager:
