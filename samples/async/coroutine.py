@@ -10,7 +10,7 @@ def consumer():
         print('[CONSUMER] Consuming %s...' % n)
         r = '200 OK'
 
-def produce(c):
+def producer(c):
     c.send(None)
     n = 0
     while n < 5:
@@ -21,4 +21,4 @@ def produce(c):
     c.close()
 
 c = consumer()
-produce(c)
+producer(c)
