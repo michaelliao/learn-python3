@@ -52,3 +52,9 @@ MANIFEST
 .mr.developer.cfg
 .project
 .pydevproject
+
+# Idea config
+.idea/
+
+# VS code config
+.vscode/
