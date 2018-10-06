@@ -50,7 +50,7 @@ HTML_INDEX = r'''
   <body>
     <form method="post" action="/run">
       <textarea name="code" style="width:90%;height: 600px"></textarea>
-      <p><button type="submit">Run</button></p>
+      <button type="submit">Run</button>
     </form>
   </body>
 </html>
