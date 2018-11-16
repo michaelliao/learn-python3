@@ -3,7 +3,7 @@
 
 class Dict(dict):
     '''
-    Simple dict but also support access as x.y style.
+    Simple dict but also support access as x.y style dfh.
 
     >>> d1 = Dict()
     >>> d1['x'] = 100
