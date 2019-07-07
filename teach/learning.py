@@ -8,7 +8,7 @@ A Python 3 tutorial from https://www.liaoxuefeng.com
 
 Usage:
 
-python3 learning.py
+$ python3 learning.py
 '''
 
 # check #######################################################################
