@@ -1,25 +1,23 @@
-# 安装Python学习助手
+# Install Python Learning Assistant
 
-首先确认Python 3.4已安装。
+First make sure the latest version of Python 3 is installed.
 
-# 下载learning.py
+# Download learning.py
 
-下载地址：
+[Download link](https://raw.githubusercontent.com/michaelliao/learn-python3/master/teach/learning.py)
 
-[https://raw.githubusercontent.com/michaelliao/learn-python3/master/teach/learning.py](https://raw.githubusercontent.com/michaelliao/learn-python3/master/teach/learning.py)
+(right click - save as)
 
-(右键 - 另存为)
+Put it in a directory, such as `C:\Work`
 
-放到某个目录，例如`C:\Work`下。
+# Run command:
 
-# 运行命令：
-
-切换到`learning.py`所在目录，运行：
+Switch to the directory where `learning.py` is located and run:
 
 ```
 C:\Work> python learning.py
 ```
 
-如果看到`Ready for Python code on port 39093...`表示运行成功，不要关闭命令行窗口，最小化放到后台运行即可。
+If you see `Ready for Python code on port 39093...`, it means that the operation was successful, don't close the command line window, minimize it and let it run in the background.
 
 ![run-learning.py.png](https://raw.githubusercontent.com/michaelliao/learn-python3/master/teach/run-learning.py.png)
