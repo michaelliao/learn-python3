@@ -3,6 +3,7 @@
 
 import math
 
+#Viene definita la funzione valore assoluto
 def my_abs(x):
     if not isinstance(x, (int, float)):
         raise TypeError('bad operand type')
@@ -11,6 +12,9 @@ def my_abs(x):
     else:
         return -x
 
+#Muove un punto nel piano cartesiano 2D
+#dove step è il modulo dello spostamento
+#e angle è la sua direzione in radianti
 def move(x, y, step, angle=0):
     nx = x + step * math.cos(angle)
     ny = y - step * math.sin(angle)
