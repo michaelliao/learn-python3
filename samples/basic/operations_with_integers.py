@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-first_integer = int(input("Please enter a number => "))
-print ("The first number you entered is: " + str(first_integer))
-second_integer = int(input("Please enter another number => "))
-print ("The second number you entered is: " + str(second_integer))
+first_integer = int(input("Perfavore inserisci un numero => "))
+print ("Il primo numero inserito è: " + str(first_integer))
+second_integer = int(input("Perfavore inserisci un altro numero => "))
+print ("Il secondo numero inserito è: " + str(second_integer))
 integer_sum = first_integer + second_integer
-print ("The sum of these numbers is: " + str(integer_sum))
+print ("La somma di questi numeri è: " + str(integer_sum))
