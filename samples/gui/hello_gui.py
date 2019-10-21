@@ -21,7 +21,7 @@ class Application(Frame):
         messagebox.showinfo('Message', 'Hello, %s' % name)
 
 app = Application()
-# 设置窗口标题:
+# Set window title:
 app.master.title('Hello World')
-# 主消息循环:
+# Main message loop:
 app.mainloop()
