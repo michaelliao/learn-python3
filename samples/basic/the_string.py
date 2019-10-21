@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
-s = 'Python esempio con una stringa italiana'
+a = 'Ciao'
+s = 'Questo è un bel codice'
+print(a)
 print(s)
 b = s.encode('utf-8')
 print(b)
