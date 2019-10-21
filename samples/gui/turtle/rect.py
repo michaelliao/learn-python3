@@ -1,15 +1,15 @@
-# 导入turtle包的所有内容:
+# Importa tutto il contenuto del pacchetto turtle:
 from turtle import *
 
-# 设置笔刷宽度:
+# Imposta la larghezza del pennello:
 width(4)
 
-# 前进:
+# in avanti:
 forward(200)
-# 右转90度:
+# Gira a destra di 90 gradi:
 right(90)
 
-# 笔刷颜色:
+# Colore del pennello:
 pencolor('red')
 forward(100)
 right(90)
@@ -22,5 +22,5 @@ pencolor('blue')
 forward(100)
 right(90)
 
-# 调用done()使得窗口等待被关闭，否则将立刻关闭窗口:
+# Chiama done () per attendere che la finestra sia chiusa, altrimenti la finestra si chiuderà immediatamente:
 done()
