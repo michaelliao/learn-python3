@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# 注意:
-# input()返回的是字符串
-# 必须通过int()将字符串转换为整数
-# 才能用于数值比较:
+# bada:
+# input() Restituisce una stringa
+# Deve passare int() Converte una stringa in un numero intero
+# Può essere utilizzato per il confronto numerico:
 age = int(input('Input your age: '))
 
 if age >= 18:
