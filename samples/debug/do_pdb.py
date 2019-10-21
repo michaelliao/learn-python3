@@ -5,5 +5,5 @@ import pdb
 
 s = '0'
 n = int(s)
-pdb.set_trace() # 运行到这里会自动暂停
+pdb.set_trace() # L'esecuzione qui si interromperà automaticamente
 print(10 / n)
