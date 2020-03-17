@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from collections import Iterable, Iterator
+from collections.abc import Iterable, Iterator
 
 def g():
     yield 1
