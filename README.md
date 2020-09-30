@@ -1,2 +1,2 @@
-Python 3 教程
+Python 3 教程--Amazing Project
 ============
