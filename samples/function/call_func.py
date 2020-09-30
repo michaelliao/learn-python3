@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+# Try this in your own editors
 x = abs(100)
 y = abs(-20)
 print(x, y)
