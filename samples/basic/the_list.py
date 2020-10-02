@@ -3,10 +3,10 @@
 
 classmates = ['Michael', 'Bob', 'Tracy']
 print('classmates =', classmates)
-print('len(classmates) =', len(classmates))
-print('classmates[0] =', classmates[0])
-print('classmates[1] =', classmates[1])
-print('classmates[2] =', classmates[2])
-print('classmates[-1] =', classmates[-1])
+print('The length of classmates =', len(classmates))
+print('Classmate at index 0 =', classmates[0])
+print('Classmate at index 1 =', classmates[1])
+print('Classmate at index 2 =', classmates[2])
+print('Classmate at index -1 / last index =', classmates[-1])
 classmates.pop()
-print('classmates =', classmates)
+print('classmates after the pop =', classmates)
