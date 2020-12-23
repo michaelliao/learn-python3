@@ -61,7 +61,7 @@ def joystickLoop(robot, eventFile):
                     return robot.inactive()
             elif t == 3:
                 if c == 1:
-                    # Left stick & verticle:
+                    # Left stick & vertical:
                     speed = 0
                     if v < 32768:
                         # up:
