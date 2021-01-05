@@ -1,16 +1,25 @@
-#!/usr/bin/env python3
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
-
-L = ['Michael', 'Sarah', 'Tracy', 'Bob', 'Jack']
-
-print('L[0:3] =', L[0:3])
-print('L[:3] =', L[:3])
-print('L[1:3] =', L[1:3])
-print('L[-2:] =', L[-2:])
-
-R = list(range(100))
-print('R[:10] =', R[:10])
-print('R[-10:] =', R[-10:])
-print('R[10:20] =', R[10:20])
-print('R[:10:2] =', R[:10:2])
-print('R[::5] =', R[::5])
+def trim(s):
+    start = 0
+    end = 0
+    pos = 0
+#find first non-space from left
+    while(pos <len(s)):
+        if s[pos] == ' ':
+            pos += 1
+            continue
+        elif s[pos] != ' ':
+            start = pos
+            break
+    pos = len(s) - 1
+#find first non-space from right
+    while(pos >=0):
+        if s[pos] == ' ':
+            pos -= 1
+            continue
+        elif s[pos] != ' ':
+            end = pos + 1
+            break
+#return slice
+    return s[start:end]
