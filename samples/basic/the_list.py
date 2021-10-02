@@ -10,3 +10,15 @@ print('classmates[2] =', classmates[2])
 print('classmates[-1] =', classmates[-1])
 classmates.pop()
 print('classmates =', classmates)
+
+#append values to list
+classmates.append('Pam')
+print(classmates)
+
+#insert at particular index
+classmates.insert(1,'Jim')
+print(classmates)
+
+#reverse the list
+classmates.reverse()
+print(classmates)
