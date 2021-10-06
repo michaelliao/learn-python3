@@ -4,7 +4,15 @@
 from flask import Flask
 from flask import request
 
+# Install cors by running -
+# `pip install flask-cors`
+from flask_cors import CORS
+
 app = Flask(__name__)
+
+# Initialize 'Cross Origin Resource Sharing' (cors) for the application.
+# For more information on cors visit https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+CORS(app=app)
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
