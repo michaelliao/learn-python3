@@ -8,7 +8,10 @@ export default class LearnPython3Plugin {
         let
             tag = opt.pyScriptTag,
             outputId = tag.getAttribute('output'),
-            $btn = $('button[outputId=' + outputId + ']');
+            $btn = $('button[outputId=' + outputId + ']'),
+            $i = $btn.find('i');
+		$i.removeClass('uk-icon-spinner');
+		$i.removeClass('uk-icon-spin');
         $btn.removeAttr('disabled');
     }
 }
