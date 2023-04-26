@@ -5,6 +5,8 @@ export default class LearnPython3Plugin {
     }
 
     afterPyScriptExec(opt) {
+	console.log('Result >>>');
+	console.log(opt.result);
         let
             tag = opt.pyScriptTag,
             outputId = tag.getAttribute('output'),
