@@ -5,8 +5,7 @@ export default class LearnPython3Plugin {
     }
 
     afterPyScriptExec(opt) {
-	console.log('Result >>>');
-	console.log(opt.result);
+	console.log(opt);
         let
             tag = opt.pyScriptTag,
             outputId = tag.getAttribute('output'),
@@ -15,5 +14,10 @@ export default class LearnPython3Plugin {
 		$i.removeClass('uk-icon-spinner');
 		$i.removeClass('uk-icon-spin');
         $btn.removeAttr('disabled');
+    }
+
+    onUserError(err) {
+	console.log('Error >>>');
+        console.error(err);
     }
 }
