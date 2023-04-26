@@ -9,6 +9,6 @@ export default class LearnPython3Plugin {
             tag = opt.pyScriptTag,
             outputId = tag.getAttribute('output'),
             $btn = $('button[outputId=' + outputId + ']');
-        $button.removeAttr('disabled');
+        $btn.removeAttr('disabled');
     }
 }
