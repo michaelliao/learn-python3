@@ -13,17 +13,17 @@ export default class LearnPython3Plugin {
         $i.removeClass('uk-icon-spinner');
         $i.removeClass('uk-icon-spin');
         $btn.removeAttr('disabled');
-        let err = $(tag).find('pre.py-error').text();
+        let err = $(tag).find('pre.py-error').html();
         if (err) {
             let
                 $out = $('#' + outputId),
-                s = $out.text();
+                s = $out.html();
             if (s) {
-                s = s + '\n' + err;
+                s = s + '<br>' + err;
             } else {
                 s = err;
             }
-            $out.text(s);
+            $out.html(s);
             $out.addClass('uk-alert-danger');
         }
     }
