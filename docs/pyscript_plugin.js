@@ -18,11 +18,7 @@ export default class LearnPython3Plugin {
             let
                 $out = $('#' + outputId),
                 s = $out.html();
-            if (s) {
-                s = s + '<br>' + err;
-            } else {
-                s = err;
-            }
+            s = s + err.replaceAll(' ', '&nbsp;');
             $out.html(s);
             $out.addClass('uk-alert-danger');
         }
