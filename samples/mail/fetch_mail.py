@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# test1
 
 from email.parser import Parser
 from email.header import decode_header
