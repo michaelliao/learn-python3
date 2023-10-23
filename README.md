@@ -8,3 +8,7 @@ This is the second change on README file.
 This isthe third change made on README file.
 
 This is extra text to explain the changes as asked in comment.
+
+lets try squash. this is unclear consept
+
+this is more description
