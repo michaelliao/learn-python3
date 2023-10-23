@@ -1,4 +1,4 @@
-Python 3 教程
-============
+Python3
+=======
 
-[Python 3 教程](https://www.liaoxuefeng.com/wiki/1016959663602400)
+This repo is forked on learning purposes only. Thanks mechaelliao.
