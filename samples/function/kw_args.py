@@ -27,5 +27,5 @@ def print_info(name, *, gender, city='Beijing', age):
     print('    Age: %s' % age)
     print()
 
-print_info('Bob', gender='male', age=20)
+print_info('Bob', gender='male', city='jaipur', age=20)
 print_info('Lisa', gender='female', city='Shanghai', age=18)
