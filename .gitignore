@@ -52,3 +52,4 @@ MANIFEST
 .mr.developer.cfg
 .project
 .pydevproject
+*.txt
