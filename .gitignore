@@ -54,3 +54,4 @@ MANIFEST
 .pydevproject
 *.txt
 *.csv
+.idea
